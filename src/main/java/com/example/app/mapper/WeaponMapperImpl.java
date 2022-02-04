@@ -29,7 +29,7 @@ public class WeaponMapperImpl implements WeaponMapper {
             return null;
 
         List<WeaponDTO> weaponDTOs = weapons.stream().map(this::toWeaponDTO).collect(Collectors.toList());
-        return null;
+        return weaponDTOs;
     }
 
     @Override
